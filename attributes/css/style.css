@@ -320,7 +320,113 @@ a {
 
 .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+
 }
+
+
+/* Responive commonds*/
+@media only screen and (max-width: 390px) {
+    .nav-menu {
+        position: absolute;
+        overflow: hidden;
+      
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.884);
+        width: 100%;
+        border-radius: 10px;
+        text-align: left;
+        transition: 0.8s;
+       
+      
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 0.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .search-container {
+        margin-left: 50px;
+        
+    }
+    .slideshow-container{
+        max-width: 1000px;
+        margin:20px;
+    }
+   
+    
+.category{
+    font-size: 20px;
+
+    background-color:white;
+    margin-top: 50px;
+    margin-left: 150px;
+    text-align: center;
+    line-height: 25px;
+   
+ 
+    color:green;
+}
+.best-seller{
+    margin: 1.5rem;
+    width: 200px;
+    line-height: 1rem;
+    padding: auto;
+
+}
+.img-info{
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+
+   
+ 
+   
+   
+    
+  
+   
+    
+  
+
+       
+       
+    
+     
+    
+  
+
+
+
+
+
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+
+
+
 
 
 
