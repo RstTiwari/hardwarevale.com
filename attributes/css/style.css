@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+html {
+    font-size: 80%;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+/*Order sction */
+
+.order
+{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    max-width: initial;
+    margin: auto;
+
+
+    
+}
+
+
+
+ 
+
+/*Top navigation bar design start from here*/
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+   
+    justify-content: space-between;
+    align-items: left;
+    padding: 1rem 1.5rem;
+    position: relative;
+    z-index: 9999;
+
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background-color:#101010;
+   
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    
+}
+
+.nav-item {
+    margin-left: 6rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color:green;
+}
+
+.nav-link:hover{
+    color: #482ff7;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: green;
+}/*top nav ends here*/
+
+/*Search button*/
+
+.search-container {
+   
+   
+ 
+    margin-left: 352px;
+
+    width: 100px;
+    margin-top: 10px;
+  
+  
+}/*search button*/
+
+/*slider continer show start from here*/
+.img{vertical-align: center;}
+/*slidershow-container*/
+.slideshow-container{
+    max-width: 1500px;
+    margin:5px;
+   
+
+   
+   
+    
+ 
+
+    
+}
+.offer{
+    position: absolute;
+    margin-top: -20rem;
+    font-size: 50px;
+}
+
+
+
+
+
+
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active .dot:hover {
+    background-color: #717171;
+  }
+  
+ /* Fading animation */
+  .fade {
+   
+    -webkit-animation-duration: 0.01s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: 0.4} 
+    to {opacity: 0.4}
+  }
+  
+  @keyframes fade {
+    from {opacity:1} 
+    to {opacity: 1}
+  }
+  
+/*Side bar navigation */
+
+
+
+
+
+
+/* Choose Category // Category Bestseller Products*/
+
+
+.best-selling-heding{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    border-bottom: solid thin yellowgreen ;
+
+}
+.best-seller{
+    display: flex;
+    flex-wrap: wrap;
+    
+
+    justify-content: space-between;
+    margin: 2.6rem;
+   
+    border: thin solid wheat;
+    padding: 0.3rem;
+    
+}
+
+.best-seller a:hover{
+    transform: scale(1.01);
+    opacity: 0.7;
+}
+.img-info{
+    margin-left: 50px;
+    
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: seagreen;
+  
+   
+}
+
+
+
+/* From here onwords fastners and ohter pages start from here*/
+.icons{
+    color: black;
+    font-size: 1.5rem;
+    margin: auto;
+    background-color:cornsilk;
+    padding: auto;
+}
+
+.cat-type{
+    display: flex;
+    flex-wrap: wrap;
+    
+
+    justify-content: space-between;
+    margin: 2.2rem;
+    row-gap: 15px;
+   
+    
+    padding: 0.3rem;
+    
+
+
+
+  
+}
+.cat-items{
+    text-align: center;
+    padding: 20px;
+    font-size: 10px;
+    border: thick solid  wheat;
+    
+
+
+
+}
+.cat-type img{
+    border: thin solid  wheat;
+
+}
+    
+.fastner-info{
+  
+    
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: seagreen;
+
+}
+
+    
+  
+   
+    
+
+ 
+
+
+
+
+
+
+/* Responive commonds*/
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: absolute;
+        overflow: hidden;
+      
+        left: -100%;
+        flex-direction: column;
+        background-color:white ;
+        width: 100%;
+      
+
+     
+        top: 8px;
+        border-radius: 10px;
+        text-align: left;
+        transition: 0.8s;
+      
+       
+      
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 0.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+
+}
+    .search-container {
+        margin-left: 50px;
+        
+    }
+    .slideshow-container{
+        max-width: 1000px;
+        margin:5px;
+    }
+  
+    
+
+
+.best-seller{
+    margin:auto;
+    width: 150px;
+    display: flex;
+
+   
+ 
+  
+  
+}
+
+.img-info{
+    margin-left: auto;
+    margin-top: auto;
+}
+
+.cat-item{
+    margin:auto;
+    width: 150px;
+    display: flex;
+    
+
+    
+    
+}
+.fastner-info{
+  
+    
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: seagreen;
+
+}
+
+
+    
+
+
+
+    
+
+   
+ 
+   
+   
+    
+  
+   
+    
+  
+
+       
+       
+    
+     
+    
+  
+
+
+
+
+
+
+
+
+
+   
+ 
+   
+   
+    
+  
+   
+    
+  
+
+       
+       
+    
+     
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
