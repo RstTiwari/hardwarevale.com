@@ -229,6 +229,7 @@ a {
 .cat-type{
     display: flex;
     flex-wrap: wrap;
+    width: 450px;
     
 
     justify-content: space-between;
