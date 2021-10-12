@@ -359,7 +359,7 @@ tr:hover {background-color:burlywood;}
 
 
 /* Responive commonds*/
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 550px) {
     .nav-menu {
         position: absolute;
         overflow: hidden;
