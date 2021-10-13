@@ -96,7 +96,7 @@ a {
     font-size: 2.1rem;
     font-weight: 500;
     color: green;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
 }
 .nav-logo:hover{
     text-decoration: none;
@@ -359,20 +359,27 @@ tr:hover {background-color:burlywood;}
 
 
 /* Responive commonds*/
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 750px) {
     .nav-menu {
-        position: absolute;
+        position: fixed;
+     
         overflow: hidden;
       
         left: 100%;
         flex-direction: column;
+        column-gap: 10px;
         background-color:white ;
         width: 100%;
+        height: 100%;
+        top:0px;
+        
+       
+       
        
       
 
      
-        top: 50px;
+     
         border-radius: 10px;
         text-align: left;
         transition: 0.1s;
@@ -380,22 +387,45 @@ tr:hover {background-color:burlywood;}
       
        
       
+
     }
+    .navbar{
+        justify-content: ;
+    }
+ 
+
+   
+
+
+  
 
     .nav-menu.active {
         left: 0;
+        justify-content: space-between;
+        
+        column-gap: 10px;
     }
 
     .nav-item {
-        margin: 0.5rem 0;
-        height: 100%;
+      
+       
+        padding: 75px;
+      
+       
+
     }
+    .nav-link{
+        column-gap: 10px;
+    }
+    
 
     .hamburger {
         display: block;
         cursor: pointer;
     }
-    
+   
+
+
 .hamburger.active .bar:nth-child(2) {
     opacity: 0;
 }
@@ -465,7 +495,7 @@ tr:hover {background-color:burlywood;}
    
 
 
-    padding: 10px 
+    padding: 10px; 
     font-size:10px;
     border: none;
     display: flex;
@@ -481,6 +511,7 @@ tr:hover {background-color:burlywood;}
 
 
 }
+
  
 
 
